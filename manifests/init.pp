@@ -57,6 +57,7 @@ class arc_ce (
   $cores_per_worker    = '16',
   $cpu_scaling_reference_si00 = '3100',
   $debug               = true,
+  $debug_level         = 5,
   $domain_name         = 'GOCDB-SITENAME',
   $enable_firewall     = true,
   $enable_glue1        = false,

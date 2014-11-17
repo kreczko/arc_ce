@@ -1,9 +1,7 @@
 [gridftpd]
 user="root"
 <%if @debug == true then -%>
-debug="5"
-<% else -%>
-debug="3"
+debug="<%= @debug_level -%>"
 <%end -%>
 logfile="<%= @log_directory %>/gridftpd.log"
 pidfile="<%= @run_directory %>/gridftpd.pid"

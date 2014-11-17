@@ -5,9 +5,7 @@ controldir="/var/spool/arc/jobstatus"
 sessiondir="<%= val %>"
 <% end -%>
 <%if @debug == true then -%>
-debug="5"
-<% else -%>
-debug="3"
+debug="<%= @debug_level -%>"
 <%end -%>
 logfile="<%= @log_directory %>/grid-manager.log"
 pidfile="<%= @run_directory %>/grid-manager.pid"
